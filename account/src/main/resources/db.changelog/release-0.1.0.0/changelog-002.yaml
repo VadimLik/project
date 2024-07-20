@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: "01"
+      author: Vadim
+      changes:
+        - dropUniqueConstraint:
+            columnNames: bank_details_id
+            constraintName: account_details_bank_details_id_key
+            tableName: account_details
